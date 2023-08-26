@@ -1,0 +1,109 @@
+/* Write CSS here */
+* {
+  font-family: 'Roboto';
+}
+
+.app-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .app-bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-heading {
+  color: #333333;
+}
+
+.stopwatch-container {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  height: 240px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+  flex-shrink: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+  }
+}
+
+.timer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-heading {
+  margin-left: 10px;
+  color: #333333;
+}
+
+.btn-container {
+  height: 30px;
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  height: 30px;
+  width: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.start-btn {
+  background-color: #1db05f;
+}
+
+.stop-btn {
+  background-color: #ef0d36;
+}
+
+.reset-btn {
+  background-color: #eaa800;
+}
